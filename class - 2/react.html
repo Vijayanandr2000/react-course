@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React in HTML</title>
+
+    <!-- /** Core React */ -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- /** ReactDOM for rendering React components to the DOM */ -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+
+    <script>
+        const body = document.querySelector("body");
+        const h1Element = React.createElement("h1", {
+            id: "vijay",
+            class: "anand"
+        }, "Vijay");
+
+        ReactDOM.render(h1Element, body);
+
+        console.log(h1Element);
+    </script>
+
+</body>
+
+</html>
